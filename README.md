@@ -1,0 +1,2 @@
+# lograndom
+Random diaries.
