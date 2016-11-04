@@ -1,0 +1,28 @@
+IDS-to-Encoding Domain-specific-Language Idea:
+
+structure hor/2
+structure hors/3
+// and more structural definitions
+
+encode[.IDS] {
+  日 >> A
+  月 >> B
+  金 >> C
+  木 >> D
+  頁 >> M B U C
+  鳥 >> H A Y F
+  // and more character encodings
+  hors .X .Y .Z >> encode[hor .X hor .Y .Z]
+  hor hor .X .Y hor .Z >> encode[hor .X hor .Y .Z]
+  hor .X .Y >> encode2[.X] encode3[.Y]
+  // and more structural rules
+}
+
+encode2[.IDS] {
+  // ...
+}
+
+encode3[.IDS] {
+  // ...
+}
+
